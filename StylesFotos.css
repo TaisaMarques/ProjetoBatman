@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+    
+}
+
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+nav {
+
+    width: 60%;
+    
+}
+
+Ul {
+          
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  
+    
+    
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'kdam Thmor Pro' , sans-serif;
+
+}
+
+li:hover {
+    color: #D21617;
+
+}
+
+
+h1{
+    list-style: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'kdam Thmor Pro' , sans-serif;
+
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+
+}
+
+#banner{
+    background-image: url("https://legadodadc.com.br/wp-content/uploads/2021/11/The-Batman-Filme-ganha-novos-poster-banner-e-arte-promocional-veja.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam Thmor Pro' , sans-serif;
+
+
+}
+
+
+.card:hover {
+    transform: scale(1.02);
+    color: #D21617;
+   
+
+}
+
+.banner-1 {
+    background-image: url("https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/01/batman-robert-pattinson-2022.jpg?w=1200&h=900&crop=1");
+}
+
+.banner-2 {
+    background-image: url("https://pbs.twimg.com/media/FMO83fmWYAMYttY.jpg");
+}
+
+.banner-3 {
+    background-image: url("https://asalvision.com/wp-content/uploads/2022/03/Jeffrey-Wright-The-Batman-2022-Black-Coat.jpg");
+}
+
+.banner-4 {
+    background-image: url("https://i.pinimg.com/236x/63/02/7a/63027a0889d4c700edf701e656f58554.jpg")
+}
+
+.banner-5 {
+    background-image: url("https://i.pinimg.com/236x/0b/cb/0f/0bcb0f5f1daf6f75234916d4679be649.jpg");
+}
+
+.banner-6 {
+    background-image: url("https://i.pinimg.com/236x/75/5f/9f/755f9f32ca4b2e2be1622d36482b57e6.jpg");
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+span {
+      color: #fff;
+      font-family:'kdam Thmor Pro' , sans-serif;
+      
+    }
+
+  
+.footer-navigation {
+      display: none;
+}
+  
+.footer-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+}
+
+
+@media(max-width: 768px){
+
+    .footer-navigation {
+        display: block;
+
+    }
+
+    nav {
+        display: none;
+
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+   
+    .cards-content {
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+    }
+
+}
+
+
